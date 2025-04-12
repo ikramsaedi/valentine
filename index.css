@@ -13,4 +13,11 @@ body {
     justify-content: center;
     font-size: 2.5em;
     text-align: center;
+    scroll-snap-align: start;
+}
+
+#page-scroller {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
