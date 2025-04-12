@@ -5,15 +5,20 @@ body {
     margin: 0;
 }
 
+button {
+    font-family: inherit;
+}
+
 #text-container {
-    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font-size: 2.5em;
     text-align: center;
     scroll-snap-align: start;
+    padding: 2vw;
 }
 
 #page-scroller {

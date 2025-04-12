@@ -5,8 +5,13 @@ function main() {
   const audio = document.querySelector("audio") as HTMLAudioElement;
   audio.src = valentineSong;
 
-  const img = document.querySelector("button > img") as HTMLImageElement;
-  img.src = audioIcon;
+  const soundOnBtn = document.querySelector("button#sound-on");
+  const btnIcon = soundOnBtn?.querySelector("img") as HTMLImageElement;
+  btnIcon.src = audioIcon;
+
+  soundOnBtn?.addEventListener("click", () => {
+    audio.play();
+  });
 }
 
 main();
