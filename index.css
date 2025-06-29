@@ -21,7 +21,8 @@ button {
     border-radius: 4px;
     display: flex;
     align-items: center;
-    width: 60%;
+    gap: 2vw;
+    padding: 0 3vw;
 }
 
 .text-container {
@@ -54,4 +55,9 @@ button {
     width: 100%;
     border-radius: 16px;
     border: var(--foreground-color) 2px dashed;
+}
+
+.scream {
+    font-family: 'Space Mono';
+    word-break: break-all;
 }
