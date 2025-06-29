@@ -1,6 +1,11 @@
+:root {
+  --foreground-color: #9CE9E1;
+  --background-color: #25958A;
+}
+
 body {
-    background: #25958A;
-    color: #9CE9E1;
+    background: var(--background-color);
+    color: var(--foreground-color);
     font-family: 'Sacramento', serif;
     margin: 0;
     overflow-x: hidden;
@@ -10,8 +15,8 @@ button {
     font-family: inherit;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);;
-    background-color: #9CE9E1;
-    color: #25958A;
+    background-color: var(--foreground-color);
+    color: var(--background-color);
     font-size: 0.4em;
     border-radius: 4px;
     display: flex;
@@ -48,5 +53,5 @@ button {
 .memory-img {
     width: 100%;
     border-radius: 16px;
-    border: white 2px dashed;
+    border: var(--foreground-color) 2px dashed;
 }
