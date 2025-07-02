@@ -30,6 +30,12 @@ function main() {
   yesButton?.addEventListener("click", () => {
     heartLottie.goToAndPlay(0, true);
   });
+
+  const flipCardInner = document.querySelector(".flip-card-inner");
+
+  flipCardInner?.addEventListener("click", () => {
+    flipCardInner.classList.toggle("is-flipped");
+  });
 }
 
 main();
