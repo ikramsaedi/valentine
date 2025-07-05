@@ -64,6 +64,11 @@ button {
   width: 75vw;
 }
 
+#notion-page {
+    width: 75vw;
+    border-radius: 16px;
+}
+
 .memory-img {
   width: 100%;
   border-radius: 16px;
