@@ -31,10 +31,12 @@ function main() {
     heartLottie.goToAndPlay(0, true);
   });
 
-  const flipCardInner = document.querySelector(".flip-card-inner");
+  const cards = document.querySelectorAll(".flip-card-inner");
 
-  flipCardInner?.addEventListener("click", () => {
-    flipCardInner.classList.toggle("is-flipped");
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("is-flipped");
+    });
   });
 }
 

@@ -85,9 +85,23 @@ button {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  aspect-ratio: 3 / 4;
   border-radius: 16px;
   border: var(--foreground-color) 2px dashed;
+}
+
+.vertical {
+    aspect-ratio: 3 / 4;
+    font-size: 1.5em;
+}
+
+.horizontal {
+    aspect-ratio: 4 / 3;
+    font-size: 1.2em;
+}
+
+.photobooth {
+    aspect-ratio: 2 / 3;
+    font-size: 1.5em;
 }
 
 .flip-card-inner.is-flipped {
@@ -119,5 +133,5 @@ button {
 
 .memory-description {
   padding: 6vw;
-  font-size: 1.5em;
+  
 }
