@@ -5,7 +5,7 @@ import lottie from "lottie-web";
 function main() {
   addSoundOnBtn();
 
-  addHeartAnimation();
+  addYesButton();
 
   addFlipCards();
 }
@@ -25,7 +25,7 @@ function addSoundOnBtn() {
   });
 }
 
-function addHeartAnimation() {
+function addYesButton() {
   const yesButton = document.querySelector("button#yes") as HTMLButtonElement;
   const heartAnimation = document.querySelector(
     "#heart-animation"
@@ -39,8 +39,14 @@ function addHeartAnimation() {
     autoplay: false,
   });
 
+  const yippee = document.getElementById("yippee") as HTMLDivElement;
+
   yesButton?.addEventListener("click", () => {
     heartLottie.goToAndPlay(0, true);
+
+    setTimeout(() => {
+      yippee.scrollIntoView({ behavior: "smooth" });
+    }, 500);
   });
 }
 
