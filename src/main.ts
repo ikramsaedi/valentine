@@ -3,6 +3,16 @@ import audioIcon from "./assets/audio-icon.svg";
 import lottie from "lottie-web";
 
 function main() {
+  addSoundOnBtn();
+
+  addHeartAnimation();
+
+  addFlipCards();
+}
+
+main();
+
+function addSoundOnBtn() {
   const audio = document.querySelector("audio") as HTMLAudioElement;
   audio.src = valentineSong;
 
@@ -13,7 +23,9 @@ function main() {
   soundOnBtn?.addEventListener("click", () => {
     audio.play();
   });
+}
 
+function addHeartAnimation() {
   const yesButton = document.querySelector("button#yes") as HTMLButtonElement;
   const heartAnimation = document.querySelector(
     "#heart-animation"
@@ -30,7 +42,9 @@ function main() {
   yesButton?.addEventListener("click", () => {
     heartLottie.goToAndPlay(0, true);
   });
+}
 
+function addFlipCards() {
   const cards = document.querySelectorAll(".flip-card-inner");
 
   cards.forEach((card) => {
@@ -39,5 +53,3 @@ function main() {
     });
   });
 }
-
-main();
