@@ -48,11 +48,6 @@ esbuild@^0.25.0:
     "@esbuild/win32-ia32" "0.25.1"
     "@esbuild/win32-x64" "0.25.1"
 
-fsevents@~2.3.2, fsevents@~2.3.3:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
-  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
-
 lottie-web@^5.13.0:
   version "5.13.0"
   resolved "https://registry.npmjs.org/lottie-web/-/lottie-web-5.13.0.tgz"
